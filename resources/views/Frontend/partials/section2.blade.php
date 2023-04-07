@@ -20,6 +20,8 @@
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card" style="width: 200px; height: 300px;">
         <div class="card-body">
+          <img class="ronded " src="{{asset('upload/cards_icons/it.png')}}" width="100" alt="">
+          <br>
           <h5 class="card-title">Step 1</h5>
           <p class="card-text">Web Developer</p>
         </div>
@@ -28,25 +30,28 @@
     <div class="col-md-4 col-lg-3 mb-4 card-animate">
       <div class="card" style="width: 200px; height: 300px;">
         <div class="card-body">
-          <h5 class="card-title">Card 2</h5>
-          <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        </div>
+          <img class="ronded " src="{{asset('upload/cards_icons/it2.png')}}" width="100" alt="">
+          <br>
+          <h5 class="card-title">Step 1</h5>
+          <p class="card-text">Web Developer</p>        </div>
       </div>
     </div>
     <div class="col-md-8 col-lg-3 mb-4 card-animate">
       <div class="card" style="width: 200px; height: 300px;">
         <div class="card-body">
-          <h5 class="card-title">Card 3</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-        </div>
+          <img class="ronded " src="{{asset('upload/cards_icons/programmer.png')}}" width="100" alt="">
+          <br>
+          <h5 class="card-title">Step 1</h5>
+          <p class="card-text">Web Developer</p>        </div>
       </div>
     </div>
     <div class="col-md-4 col-lg-3 mb-4 card-animate">
       <div class="card" style="width: 200px; height: 300px;">
         <div class="card-body">
-          <h5 class="card-title">Card 4</h5>
-          <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        </div>
+          <img class="ronded " src="{{asset('upload/cards_icons/work-in-progress.png')}}" width="100" alt="">
+          <br>
+          <h5 class="card-title">Step 1</h5>
+          <p class="card-text">Web Developer</p>        </div>
       </div>
     </div>
   </div>
