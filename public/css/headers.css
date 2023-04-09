@@ -1,0 +1,73 @@
+
+
+
+
+
+/*    Card in Headers    */
+
+#cards {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cornsilk;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  #cards ul {
+    padding: 0;
+    list-style-type: none;
+  
+  }
+  
+  #cards ul li {
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 20px;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  #cards ul li:nth-child(odd) {
+    background: linear-gradient(to right, #a67efa, #320494);
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(500px) rotateY(45deg);
+  }
+  
+  #cards ul li:nth-child(even) {
+    background: linear-gradient(to left, #a67efa, #320494);
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px) rotateY(-45deg);
+  }
+  
+  #cards ul li:nth-child(odd):hover {
+    transform: perspective(200px) rotateY(45deg);
+    padding-left: 5%;
+  }
+  
+  #cards ul li:nth-child(even):hover {
+    transform: perspective(200px) rotateY(-45deg);
+    padding-right: 5%;
+  }
+  
+  @media (max-width: 767px) {
+    #header-content-1, #cards {
+      display: none;
+    }
+  }

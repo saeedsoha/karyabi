@@ -7,7 +7,13 @@
     <!-------------------- CSS  ----------------------->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/progessbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/progressbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/project.css')}}">
+    <link rel="stylesheet" href="{{asset('css/testmonial.css')}}">
+    <link rel="stylesheet" href="{{asset('css/contact.css')}}">
+ 
+  
+
     <!-------------------- Icon  ----------------------->
     <link rel="shortcut icon" href="{{asset('upload/fav-icon/house.png')}}">
     <!-------------------- Bootstrap v.5  ----------------------->
@@ -17,6 +23,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     
+    <!-------------------- FontAwesome  ----------------------->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-------------------- Animate.css ----------------------->
     {{-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> --}}
 
@@ -24,11 +32,18 @@
     <title>Alucard Home</title>
 </head>
 <body>
-    @include('Frontend.partials.nav')
-    @include('Frontend.partials.header')
-    @include('Frontend.partials.section2')
-    @include('Frontend.partials.progessbar')
+    <dir class="home">
 
+        @include('Frontend.partials.nav')
+        @include('Frontend.partials.header')
+        @include('Frontend.partials.canvas')
+        @include('Frontend.partials.section2')
+        @include('Frontend.partials.progessbar')
+        @include('Frontend.partials.project')
+        @include('Frontend.partials.testemonial')
+        @include('Frontend.partials.contact')
+
+    </dir>    
 
 
     <section id="header">

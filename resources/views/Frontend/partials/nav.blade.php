@@ -2,7 +2,7 @@
     <div class="container">
       <!-- Left part -->
       <div class="navbar-text d-flex">
-        <img src="{{asset('upload/logo/alucard-logo.png')}}" alt="Logo" width="65" height="50" class="me-2">
+        <img src="{{asset('upload/logo/logo.png')}}" alt="Logo" width="150" height="50" class="me-2">
         
       </div>
   
@@ -15,13 +15,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="#">Link 1</a>
+            <a class="nav-link " href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#">Send CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>

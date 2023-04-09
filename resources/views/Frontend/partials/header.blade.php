@@ -1,30 +1,34 @@
+<link rel="stylesheet" href="{{asset('css/headers.css')}}">
 
 <header id="header-section" class="header-section position-relative" style="height:100vh; width: 100%; background-image: url({{ asset('upload/bg/bg2.jpg') }}); background-size: cover;">
    
+    <div class="container" >
+        <div class="main-text-wrapper">
+            <div class="col">
+                <div id="header-content-1" style="position: absolute; top: 25%; left: 35%; transform: translate(-50%, -50%);" class="d-flex flex-column justify-content-center align-items-center mt-5  " >
+                    <div class="bg-primary-c rounded-circle" style="width: 1.5rem; height: 1.5rem;"></div>
+                    <div class="violet-gradient" style="width: 0.15rem; height: 20rem;"></div>
+                </div>
+                
+                <div id="header-content-2" style="position: absolute; top: 26%; left: 36%; transform: translate(0, -60%); display: none;" >
+                    <h1 class="font-black text-white lg-text-80px md-text-60px sm-text-50px text-40px lg-leading-98px mt-2">
+                        Hi, I'm <span class="text-purple">Saeid</span>
+                    </h1>
+                    <p style="line-height: 40px; font-size: 30px; " class="text-gray font-medium h5 lg-text-30px md-text-26px sm-text-20px text-16px lg-leading-40px mt-2">
+                        I develop Websites, Backends </br> and web applications
+                    </p>
 
-        <div id="header-content-1" style="position: absolute; top: 25%; left: 35%; transform: translate(-50%, -50%);display: none;" class="d-flex flex-column justify-content-center align-items-center mt-5  " >
-            <div class="bg-primary-c rounded-circle" style="width: 1.5rem; height: 1.5rem;"></div>
-            <div class="violet-gradient" style="width: 0.15rem; height: 20rem;"></div>
+                </div>
+                <a href="" class="btn btn-grad" id="header-content-3" style="position: absolute; top: 46%; left:36%; transform: translate(0, -60%); display: none;">
+                    Try it Yourself
+                </a>
+            </div>
         </div>
-        
-        <div id="header-content-2" style="position: absolute; top: 26%; left: 36%; transform: translate(0, -60%); display: none;" >
-            <h1 class="font-black text-white lg-text-80px md-text-60px sm-text-50px text-40px lg-leading-98px mt-2">
-                Hi, I'm <span class="text-purple">Saeid</span>
-            </h1>
-            <p style="line-height: 40px; font-size: 30px; " class="text-gray font-medium h5 lg-text-30px md-text-26px sm-text-20px text-16px lg-leading-40px mt-2">
-                I develop Websites, Backends </br> and web applications
-            </p>
-
-        </div>
-         <a href="" class="btn btn-grad" id="header-content-3" style="position: absolute; top: 46%; left:36%; transform: translate(0, -60%); display: none;">
-            Try it Yourself
-        </a>
-
- 
+    </div>
     
     <!---------------- Cards  ------------------------>
 
-        <section id="cards" style="display: none;" >
+        <section id="cards" style="c;" >
             <ul>
                 <li>home</li>
                 <li>products</li>
@@ -51,31 +55,55 @@
 
 </header>
 
+
+
 <script>
-    window.onload = function() {
-        // Show the header content
-        document.getElementById("header-content-1").classList.add("animate__animated", "animate__fadeInLeft");
-        document.getElementById("header-content-1").style.display = "block";
+window.onload = function() {
+  // Show/hide header content and cards section based on screen size
+    var headerContent1 = document.getElementById("header-content-1");
+    var cardsSection = document.getElementById("cards");
+    if (window.innerWidth > 767) {
+        headerContent1.classList.add("animate__animated", "animate__fadeInLeft");
+        headerContent1.style.display = "block";
+        cardsSection.classList.add("animate__animated", "animate__fadeInBottom");
+        cardsSection.style.display = "block";
+    } else {
+        headerContent1.style.display = "none";
+        cardsSection.style.display = "none";
+    }
 
-        document.getElementById("header-content-2").classList.add("animate__animated", "animate__fadeInRight");
-        document.getElementById("header-content-2").style.display = "block";
+  document.getElementById("header-content-2").classList.add("animate__animated", "animate__fadeInRight");
+  document.getElementById("header-content-2").style.display = "block";
 
-        document.getElementById("header-content-3").classList.add("animate__animated", "animate__fadeInRight");
-        document.getElementById("header-content-3").style.display = "block";
+  document.getElementById("header-content-3").classList.add("animate__animated", "animate__fadeInRight");
+  document.getElementById("header-content-3").style.display = "block";
 
-        document.getElementById("cards").classList.add("animate__animated", "animate__fadeInBottom");
-        document.getElementById("cards").style.display = "block";
+  document.querySelector(".ScrollDown").classList.add("animate__animated", "animate__fadeIn");
+  document.querySelector(".ScrollDown").style.display = "block";
 
-        document.querySelector(".ScrollDown").classList.add("animate__animated", "animate__fadeIn");
-        document.querySelector(".ScrollDown").style.display = "block";
+  // Set the height of the header section dynamically
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  // var header = document.getElementById("header-section");
+  // var contentHeight = document.getElementById("header-content-2").offsetHeight + cardsSection.offsetHeight + document.querySelector(".ScrollDown").offsetHeight;
+  // header.style.height = contentHeight + "px";
+};
+
+// Update header content and cards section display on window resize
+window.addEventListener("resize", function() {
+  var headerContent1 = document.getElementById("header-content-1");
+  var cardsSection = document.getElementById("cards");
+  if (window.innerWidth > 767) {
+    headerContent1.classList.add("animate__animated", "animate__fadeInLeft");
+    headerContent1.style.display = "block";
+    cardsSection.classList.add("animate__animated", "animate__fadeInBottom");
+    cardsSection.style.display = "block";
+  } else {
+    headerContent1.style.display = "none";
+    cardsSection.style.display = "none";
+  }
+});
 
 
-        // Set the height of the header section dynamically
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-        // var header = document.getElementById("header-section");
-        // var contentHeight = document.getElementById("header-content-2").offsetHeight + document.getElementById("cards").offsetHeight + document.querySelector(".ScrollDown").offsetHeight;
-        // header.style.height = contentHeight + "px";
-    };
 </script>

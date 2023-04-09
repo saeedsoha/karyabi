@@ -1,3 +1,7 @@
+
+  <link rel="stylesheet" href="{{asset('css/overview.css')}}">
+
+
 <section class="section2" >
   <div class="container-fluid text-center">
     <div class="row justify-content-center">
@@ -14,7 +18,7 @@
       </div>
     </div>
   </div>
-
+<br><br><br>
 <div class="container container-card card-animate">
   <div class="row mt-8 justify-content-center">
     <div class="col-md-4 col-lg-3 mb-4">

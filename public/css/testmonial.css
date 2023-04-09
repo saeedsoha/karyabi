@@ -1,0 +1,32 @@
+.bg-dark-costum{
+    width: 1280px;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    margin: auto;
+    background-color: #151130;
+}
+
+.card-body-ts{
+    position: relative;
+    overflow: hidden;
+    background-color:#090425;
+    height: 600px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: transparent;
+    border-radius: 30px;
+}
+
+.icon-text{
+    font-size: 3rem;
+}
+.testemoni-autor {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}

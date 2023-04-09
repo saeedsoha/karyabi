@@ -1,0 +1,173 @@
+
+  /* ----------------------------------------------------------------- */
+  /* ----------------------------  Section 2 ------------------------- */
+  /* ----------------------------------------------------------------- */
+
+  @media (min-width: 640px) {
+    .sm-text-18{
+      font-size: 18px;
+    }
+  }
+  
+  .text-secondary {
+    --tw-text-opacity: 1;
+    color: rgb(170 166 195 / var(--tw-text-opacity));
+  }
+  
+  .tracking-wider {
+    letter-spacing: .05em;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-14{
+    font-size: 14px;
+  }
+  
+  @media (min-width: 450px) {
+    .xs-text-40 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .sm-text-50 {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .md-text-60 {
+      font-size: 60px;
+    }
+  }
+  
+  .text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  
+  .font-black {
+    font-weight: 900;
+  }
+  
+  .text-30 {
+    font-size: 30px;
+  }
+  
+  .intro {
+    width: 800px;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .leading-30  {
+    line-height: 30px;
+  }
+  
+  .text-17 {
+    font-size: 17px;
+  }
+  
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+  }
+  
+  .section2 {
+    background-color: #050816;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  
+  .content {
+    width: 1280px;
+  }
+  
+  .card {
+    width: 350px;
+    height: 400px;
+  }
+
+  
+.container-card{
+  padding-top: 10rem;
+}
+
+
+
+
+
+/* .animat cards  */
+.card-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+}
+.card{
+  background-color: transparent!important;
+}
+.card-body {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(21, 16, 48);
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, darkblue, darkorchid) 1;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-body img{
+  width: 100px;
+  height: 100px;
+}
+
+.card-body::before {
+  position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.card-body:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
